@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #37b9f1;
+  perspective: 1000px;
 }
 
 .container {
@@ -23,12 +24,17 @@ body {
 }
 
 .card {
+  transform-style: preserve-3d;
   background-color: #100f10;
   min-height: 85vh;
   width: 35rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 50px 50px;
+}
+
+.title{
+  transition: all 0.5s ease-out;
 }
 
 .cq {
@@ -42,6 +48,7 @@ body {
 .cq img {
   width: 20rem;
   z-index: 2;
+  transition: all 0.5s ease-out;
 }
 
 .circle {
@@ -61,11 +68,15 @@ body {
   font-size: 1.3rem;
   font-weight: lighter;
   color: #585858;
+  transition: all 0.5s ease-out;
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
+  transition: all 0.5s ease-out;
+  font-family: inherit;
+  
 }
 
 .buttons button {
@@ -78,6 +89,8 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 button.active {
@@ -96,4 +109,5 @@ button.active {
   font-family: inherit;
   box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.288);
   border: none;
+  transition: all 0.5s ease-out;
 }
